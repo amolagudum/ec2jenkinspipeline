@@ -17,7 +17,7 @@ pipeline {
                 sh 'pwd'
                 sh 'terraform init -reconfigure'
                 sh 'terraform plan'
-                sh 'terraform apply -auto-approve'
+                sh 'terraform destroy -auto-approve'
                 
             }
         }
